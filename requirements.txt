@@ -10,7 +10,7 @@
 
 # General scientific computing
 
-numpy>=1.16.5,<=1.22.3
+numpy>=1.23.0,<=2.0.0
 scipy>=1.2.0,<2.0.0
 
 # Data storage and function application
