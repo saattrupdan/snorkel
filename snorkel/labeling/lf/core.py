@@ -42,7 +42,7 @@ class LabelingFunction:
     def __init__(
         self,
         name: str,
-        f: Callable[..., int],
+        f: Callable,
         resources: Optional[Mapping[str, Any]] = None,
         pre: Optional[List[BasePreprocessor]] = None,
     ) -> None:
@@ -124,7 +124,7 @@ class labeling_function:
         self.resources = resources
         self.pre = pre
 
-    def __call__(self, f: Callable[..., int]) -> LabelingFunction:
+    def __call__(self, f: Callable) -> LabelingFunction:
         """Wrap a function to create a ``LabelingFunction``.
 
         Parameters
